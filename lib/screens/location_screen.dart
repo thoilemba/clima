@@ -39,7 +39,7 @@ class _LocationScreenState extends State<LocationScreen> {
                     onPressed: () {},
                     child: Icon(
                       Icons.location_city,
-                      size: 50.0,
+                      size: 20.0,
                     ),
                   ),
                 ],
@@ -53,7 +53,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       style: kTempTextStyle,
                     ),
                     Text(
-                      '☀️',
+                      '☀',
                       style: kConditionTextStyle,
                     ),
                   ],
@@ -74,3 +74,7 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
+
+// var temperature = decodeData['main']['temp'];
+// var condition = decodeData['weather'][0]['id'];
+// var cityName = decodeData['name'];
