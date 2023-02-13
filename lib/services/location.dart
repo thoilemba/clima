@@ -17,12 +17,6 @@ class Location {
     }
   }
 
-  void determinePosition() {
-    Geolocator.requestPermission();
-    Future<Position> position = Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
-    position.then((value) => print(value));
-  }
-
 }
 
 
